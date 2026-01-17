@@ -4,28 +4,10 @@ import { Dumbbell, Utensils, BookOpen, FlaskConical } from "lucide-react"
 export function Facilities() {
   const facilities = [
     {
-      icon: BookOpen,
-      title: "Современная библиотека",
-      description: "Более 10,000 книг и электронных ресурсов для всестороннего развития учеников",
-      image: "/-------------------.jpg",
-    },
-    {
       icon: Dumbbell,
       title: "Спортивная площадка",
       description: "Современное спортивное оборудование для занятий физкультурой и спортивных секций",
       image: "/----------------------.jpg",
-    },
-    {
-      icon: Utensils,
-      title: "Школьный буфет",
-      description: "Здоровое и вкусное питание, разработанное с учетом потребностей растущего организма",
-      image: "/-----------------.jpg",
-    },
-    {
-      icon: FlaskConical,
-      title: "Лаборатории",
-      description: "Оборудованные кабинеты физики, химии и биологии для практических занятий",
-      image: "/--------------------.jpg",
     },
   ]
 
@@ -39,11 +21,11 @@ export function Facilities() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex justify-center">
           {facilities.map((facility, index) => {
             const Icon = facility.icon
             return (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow max-w-lg w-full">
                 <div className="aspect-video relative bg-muted">
                   <img
                     src={facility.image || "/placeholder.svg"}
