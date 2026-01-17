@@ -32,16 +32,6 @@ const categories = ["Выпечка", "Напитки и десерты"]
 export function MenuList() {
   return (
     <div className="max-w-5xl mx-auto space-y-8">
-      <Card className="bg-accent/10 border-accent/20">
-        <CardContent className="p-6">
-          <p className="text-center text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">Время работы столовой:</strong> 08:00 - 15:00 (Понедельник - Пятница)
-            <br />
-            <strong className="text-foreground">Большая перемена:</strong> 10:10 - 10:25 и 11:10 - 11:30
-          </p>
-        </CardContent>
-      </Card>
-
       {categories.map((category) => {
         const items = menuItems.filter((item) => item.category === category)
         return (

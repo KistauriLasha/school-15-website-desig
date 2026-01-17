@@ -6,7 +6,7 @@ export function Facilities() {
     {
       icon: Dumbbell,
       title: "Спортивная площадка",
-      description: "Современное спортивное оборудование для занятий физкультурой и спортивных секций",
+      description: "Современная спортплощадка, созданная РосАтомом, благодаря которой дети с удовольствием проводят уроки физкультуры и досуг на переменах",
       image: "/----------------------.jpg",
     },
   ]
@@ -14,13 +14,6 @@ export function Facilities() {
   return (
     <section className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Современная инфраструктура</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
-            Мы создали комфортную среду для обучения и развития каждого ученика
-          </p>
-        </div>
-
         <div className="flex justify-center">
           {facilities.map((facility, index) => {
             const Icon = facility.icon
