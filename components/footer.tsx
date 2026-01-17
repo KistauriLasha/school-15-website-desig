@@ -16,9 +16,6 @@ export function Footer() {
                 <div className="text-xs text-muted-foreground">им. А. К. Назадзе</div>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Престижное образовательное учреждение с более чем 70-летней историей качественного образования.
-            </p>
           </div>
 
           <div>

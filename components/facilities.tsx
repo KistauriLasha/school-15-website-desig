@@ -14,7 +14,7 @@ export function Facilities() {
   return (
     <section className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-center">
+        <div className="flex justify-start">
           {facilities.map((facility, index) => {
             const Icon = facility.icon
             return (
