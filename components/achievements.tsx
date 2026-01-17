@@ -4,12 +4,6 @@ import { Award, Medal, Star, Trophy } from "lucide-react"
 export function Achievements() {
   const achievements = [
     {
-      icon: Trophy,
-      title: "Лучшая школа города",
-      year: "2025",
-      description: "Награда за выдающиеся достижения в образовании",
-    },
-    {
       icon: Medal,
       title: "Олимпиады",
       year: "2024-2025",
@@ -20,12 +14,6 @@ export function Achievements() {
       title: "Спортивные успехи",
       year: "2025",
       description: "Победители городской спартакиады среди школ",
-    },
-    {
-      icon: Award,
-      title: "Научные проекты",
-      year: "2024",
-      description: "Гран-при на республиканской научной конференции",
     },
   ]
 
