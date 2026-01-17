@@ -16,6 +16,9 @@ export function Footer() {
                 <div className="text-xs text-muted-foreground">им. А. К. Назадзе</div>
               </div>
             </div>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Престижное образовательное учреждение с более чем 70-летней историей качественного образования.
+            </p>
           </div>
 
           <div>
@@ -49,11 +52,15 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-muted-foreground mt-0.5 shrink-0" />
-                <span className="text-muted-foreground">Сухум, Агрба,7</span>
+                <span className="text-muted-foreground">г. Сухум, ул. Примерная, 15</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-muted-foreground shrink-0" />
-                <span className="text-muted-foreground">+7 (940) 921-88-37</span>
+                <span className="text-muted-foreground">+7 (840) 123-45-67</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail className="h-4 w-4 text-muted-foreground shrink-0" />
+                <span className="text-muted-foreground">school15@sukhum.edu</span>
               </li>
             </ul>
           </div>

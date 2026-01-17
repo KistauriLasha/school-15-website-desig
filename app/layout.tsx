@@ -13,7 +13,21 @@ export const metadata: Metadata = {
     "Официальный сайт школы №15 им. А. К. Назадзе города Сухум. Более 50 учителей, 800+ учеников, современная спортплощадка.",
   generator: "v0.app",
   icons: {
-    icon: "/icon.svg",
+    icon: [
+      {
+        url: "/icon-light-32x32.png",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/icon-dark-32x32.png",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    apple: "/apple-icon.png",
   },
 }
 

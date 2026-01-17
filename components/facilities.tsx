@@ -14,11 +14,11 @@ export function Facilities() {
   return (
     <section className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-start items-start gap-16">
+        <div className="flex justify-center">
           {facilities.map((facility, index) => {
             const Icon = facility.icon
             return (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow max-w-lg w-full shrink-0">
+              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow max-w-lg w-full">
                 <div className="aspect-video relative bg-muted">
                   <img
                     src={facility.image || "/placeholder.svg"}
@@ -40,26 +40,6 @@ export function Facilities() {
               </Card>
             )
           })}
-          <div className="max-w-lg">
-            <h2 className="text-5xl font-bold mb-4">НАША ЦЕЛЬ</h2>
-            <p className="text-muted-foreground mb-6 text-2xl">
-              Наша главная цель – создание комфортной и мотивирующей среды для всестороннего развития личности. Мы стремимся:
-            </p>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <span className="text-primary mr-3 mt-1">•</span>
-                <span className="text-muted-foreground text-2xl">Дать прочные и актуальные знания, необходимые для успешного поступления в вузы и самореализации в современном мире.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-3 mt-1">•</span>
-                <span className="text-muted-foreground text-2xl">Воспитать ответственных граждан, уважающих историю, культуру и традиции нашей страны.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-3 mt-1">•</span>
-                <span className="text-muted-foreground text-2xl">Раскрыть потенциал каждого ребёнка через индивидуальный подход, внеклассную деятельность и проектную работу.</span>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>
