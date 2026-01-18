@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { NewsList } from "@/components/news-list"
+import Image from "next/image"
 import { Newspaper } from "lucide-react"
 
 export default function NewsPage() {
@@ -21,8 +21,14 @@ export default function NewsPage() {
         </section>
 
         <section className="py-12">
-          <div className="container mx-auto px-4">
-            <NewsList />
+          <div className="container mx-auto px-4 flex justify-center">
+            <Image
+              src="/IMG_20260117_180945.jpg"
+              alt="Новостей нет"
+              width={500}
+              height={500}
+              className="rounded-lg"
+            />
           </div>
         </section>
       </main>
