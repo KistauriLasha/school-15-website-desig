@@ -10,24 +10,25 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  // Выпечка
-  { name: "Пирожок с мясом", price: 40, category: "Выпечка", icon: Sandwich },
-  { name: "Пирожок с капустой", price: 35, category: "Выпечка", icon: Sandwich },
-  { name: "Булочка с маком", price: 30, category: "Выпечка", icon: Sandwich },
-  { name: "Ватрушка с творогом", price: 45, category: "Выпечка", icon: Sandwich },
-  { name: "Пицца школьная", price: 65, category: "Выпечка", icon: Sandwich },
+  // Выпечка и еда
+  { name: "Булочка с пудрой", price: 30, category: "Выпечка и еда", icon: Sandwich },
+  { name: "Булочка с повидлом", price: 40, category: "Выпечка и еда", icon: Sandwich },
+  { name: "Булочка с творогом", price: 40, category: "Выпечка и еда", icon: Sandwich },
+  { name: "Булочка со сгущенкой", price: 40, category: "Выпечка и еда", icon: Sandwich },
+  { name: "Пирожок с картошкой", price: 40, category: "Выпечка и еда", icon: Sandwich },
+  { name: "Булочка с сосиской", price: 55, category: "Выпечка и еда", icon: Sandwich },
+  { name: "Булочка с котлетой", price: 55, category: "Выпечка и еда", icon: Sandwich },
+  { name: "Бургер", price: 60, category: "Выпечка и еда", icon: Sandwich },
+  { name: "Хачапур «Лодочка»", price: 60, category: "Выпечка и еда", icon: Sandwich },
+  { name: "Пицца", price: 60, category: "Выпечка и еда", icon: Sandwich },
 
-  // Напитки и десерты
-  { name: "Чай", price: 15, category: "Напитки и десерты", icon: Coffee },
-  { name: "Какао", price: 35, category: "Напитки и десерты", icon: Coffee },
-  { name: "Компот", price: 20, category: "Напитки и десерты", icon: Coffee },
-  { name: "Сок", price: 40, category: "Напитки и десерты", icon: Coffee },
-  { name: "Йогурт", price: 50, category: "Напитки и десерты", icon: Dessert },
-  { name: "Фрукты (яблоко/банан)", price: 35, category: "Напитки и десерты", icon: Dessert },
-  { name: "Печенье", price: 25, category: "Напитки и десерты", icon: Dessert },
+  // Напитки
+  { name: "Компот", price: 30, category: "Напитки", icon: Coffee },
+  { name: "Какао", price: 30, category: "Напитки", icon: Coffee },
+  { name: "Чай", price: 30, category: "Напитки", icon: Coffee },
 ]
 
-const categories = ["Выпечка", "Напитки и десерты"]
+const categories = ["Выпечка и еда", "Напитки"]
 
 export function MenuList() {
   return (
@@ -37,7 +38,7 @@ export function MenuList() {
         return (
           <Card key={category}>
             <CardHeader>
-              <CardTitle className="text-2xl">{category}</CardTitle>
+              <CardTitle className="text-2xl text-center">{category}</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid sm:grid-cols-2 gap-4">
