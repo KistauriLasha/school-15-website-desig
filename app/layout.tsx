@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   generator: "v0.app",
   verification: {
     google: "3MZ2h7O6whA7eXAHgd9zhPRn4rwPJNsH-zABdQN9UGg",
+    yandex: "cd254ed0abc5875a",
   },
   icons: {
     icon: [
