@@ -8,9 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Школа №15 им. А. К. Назадзе - Сухум",
-  description:
-    "Официальный сайт школы №15 им. А. К. Назадзе города Сухум. Более 50 учителей, 800+ учеников, современная спортплощадка.",
+  title: "Школа №15 г. Сухум",
+  description: "Официальный сайт школы №15 города Сухум. Информация, новости, контакты.",
   generator: "v0.app",
   icons: {
     icon: [
