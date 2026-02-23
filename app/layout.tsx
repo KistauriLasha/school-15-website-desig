@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Школа №15 г. Сухум",
   description: "Официальный сайт школы №15 города Сухум. Информация, новости, контакты.",
   generator: "v0.app",
+  verification: {
+    google: "3MZ2h7O6whA7eXAHgd9zhPRn4rwPJNsH-zABdQN9UGg",
+  },
   icons: {
     icon: [
       {
