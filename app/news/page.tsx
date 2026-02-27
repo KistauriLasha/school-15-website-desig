@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import Image from "next/image"
-import { Newspaper } from "lucide-react"
+import { Newspaper, BookOpen } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
 
 export default function NewsPage() {
   return (
@@ -22,13 +22,30 @@ export default function NewsPage() {
 
         <section className="py-12">
           <div className="container mx-auto px-4 flex justify-center">
-            <Image
-              src="/IMG_20260117_180945.jpg"
-              alt="Новостей нет"
-              width={500}
-              height={500}
-              className="rounded-lg"
-            />
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow max-w-2xl w-full">
+              <div className="aspect-video relative bg-muted">
+                <img
+                  src="/english-week.jpg"
+                  alt="English Week"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="rounded-lg bg-primary/10 p-3 shrink-0">
+                    <BookOpen className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Неделя английского языка</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Наша тематическая неделя подошла к концу, оставив массу ярких впечатлений и новых знаний.
+                      Ребята проявили креативность в конкурсах стенгазет, блеснули знаниями на викторинах и попробовали себя в роли ораторов.
+                      Благодарим всех за энтузиазм и погружение в атмосферу англоязычной культуры. Keep calm and learn English!
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
       </main>
