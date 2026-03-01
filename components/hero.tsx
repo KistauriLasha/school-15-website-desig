@@ -4,7 +4,7 @@ import { GraduationCap } from "lucide-react"
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-primary text-primary-foreground">
-      <div className="absolute inset-0 bg-[url('/-------------------------------------.jpg')] opacity-10 bg-cover bg-center" />
+      <div className="absolute inset-0 bg-[url('/IMG_20260117_180945.jpg')] opacity-10 bg-cover bg-center" />
       <div className="container relative mx-auto px-4 py-20 md:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="mb-6 text-4xl font-bold leading-tight md:text-6xl text-balance">
