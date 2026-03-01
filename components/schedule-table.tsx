@@ -144,7 +144,7 @@ export function ScheduleTable() {
       </div>
 
       <Card className="border-2">
-        <CardHeader className="bg-primary/5 border-b">
+        <CardHeader>
           <CardTitle className="text-2xl text-center">Расписание уроков для {selectedClass} класса</CardTitle>
         </CardHeader>
         <CardContent className="pt-6">
