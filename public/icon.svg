@@ -1,12 +1,12 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     @media (prefers-color-scheme: light) {
-      .background { fill: black; }
-      .foreground { fill: white; }
+      .background { fill: oklch(0.35 0.1 250); }
+      .foreground { fill: oklch(0.98 0 0); }
     }
     @media (prefers-color-scheme: dark) {
-      .background { fill: white; }
-      .foreground { fill: black; }
+      .background { fill: oklch(0.65 0.12 250); }
+      .foreground { fill: oklch(0.15 0.02 250); }
     }
   </style>
   <g clip-path="url(#clip0_7960_43945)">
