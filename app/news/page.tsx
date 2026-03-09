@@ -23,13 +23,6 @@ export default function NewsPage() {
         <section className="py-12">
           <div className="container mx-auto px-4 flex justify-center">
             <Card className="overflow-hidden hover:shadow-lg transition-shadow max-w-2xl w-full">
-              <div className="aspect-video relative bg-muted">
-                <img
-                  src="/english-week.jpg"
-                  alt="English Week"
-                  className="w-full h-full object-cover"
-                />
-              </div>
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="rounded-lg bg-primary/10 p-3 shrink-0">
