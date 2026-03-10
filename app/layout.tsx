@@ -8,15 +8,19 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://school-15-sukhum-website.vercel.app"),
   title: "Школа №15 г. Сухум",
   description: "Официальный сайт школы №15 города Сухум. Информация, новости, контакты.",
-  generator: "v0.app",
   verification: {
     google: "3MZ2h7O6whA7eXAHgd9zhPRn4rwPJNsH-zABdQN9UGg",
     yandex: "cd254ed0abc5875a",
   },
   icons: {
     icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "32x32",
+      },
       {
         url: "/icon-light-32x32.png",
         media: "(prefers-color-scheme: light)",
@@ -32,6 +36,14 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
+  openGraph: {
+    title: "Школа №15 г. Сухум",
+    description: "Официальный сайт школы №15 города Сухум. Информация, новости, контакты.",
+    url: "https://school-15-sukhum-website.vercel.app",
+    siteName: "Школа №15 г. Сухум",
+    locale: "ru_RU",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
@@ -41,6 +53,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Школа №15 г. Сухум",
+              url: "https://school-15-sukhum-website.vercel.app",
+              description: "Официальный сайт школы №15 города Сухум. Информация, новости, контакты.",
+            }),
+          }}
+        />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
