@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   metadataBase: new URL("https://school-15-sukhum-website.vercel.app"),
   title: "Школа №15 г. Сухум",
-  description: "Официальный сайт школы №15 города Сухум. Информация, новости, контакты.",
+  description: "Сайт школы №15 города Сухум. Информация, новости, контакты.",
   verification: {
     google: "3MZ2h7O6whA7eXAHgd9zhPRn4rwPJNsH-zABdQN9UGg",
     yandex: "cd254ed0abc5875a",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Школа №15 г. Сухум",
-    description: "Официальный сайт школы №15 города Сухум. Информация, новости, контакты.",
+    description: "Сайт школы №15 города Сухум. Информация, новости, контакты.",
     url: "https://school-15-sukhum-website.vercel.app",
     siteName: "Школа №15 г. Сухум",
     locale: "ru_RU",
@@ -62,7 +62,7 @@ export default function RootLayout({
               "@type": "WebSite",
               name: "Школа №15 г. Сухум",
               url: "https://school-15-sukhum-website.vercel.app",
-              description: "Официальный сайт школы №15 города Сухум. Информация, новости, контакты.",
+              description: "Сайт школы №15 города Сухум. Информация, новости, контакты.",
             }),
           }}
         />
